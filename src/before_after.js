@@ -1,13 +1,13 @@
 let count = 0
 
-export const initializeCityDatabase = () => {
+export const initializeCountDatabase = () => {
   count = 100
 }
 
-export const clearCityDatabase = () => {
+export const clearCountDatabase = () => {
   count = 0
 }
 
-export const setCount = (val) => {
+export const setCount = () => {
   return count
 }
