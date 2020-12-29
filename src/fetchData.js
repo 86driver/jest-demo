@@ -17,3 +17,12 @@ export const fetchPromise = () => {
     }, 0)
   })
 }
+
+export async function fetchAsync() {
+  let data = ''
+  function dataChange() {
+    data = 'async'
+    return data
+  }
+  return await dataChange(data)
+}

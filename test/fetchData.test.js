@@ -1,4 +1,4 @@
-import { fetchCall, fetchPromise } from '../src/fetchData'
+import { fetchCall, fetchPromise, fetchAsync } from '../src/fetchData'
 
 
 //callback test
@@ -22,3 +22,7 @@ test('the data is promise', (done) => {
   })
 })
 
+// async/await test
+test('the data is async', async () => {
+  await expect(fetchAsync()).resolves.toBe('async')
+})
